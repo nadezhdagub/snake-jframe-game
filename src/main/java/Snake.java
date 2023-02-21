@@ -13,10 +13,11 @@ public class Snake {
         sY[1] = y2;
     }
 
+
     public void move(){
         for (int l = length; l > 0; l--) {
             sX[l] = sX[l - 1];
-            sY[l] = sX[l - 1];
+            sY[l] = sY[l - 1];
         }
         // up
         if (direction == 0) sY[0]--;
